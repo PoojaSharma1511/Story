@@ -13,6 +13,7 @@ function CartItem({product}) {
 
     return (
     <div className="cart-item">
+      <h1><span className='V'>The Lost City </span> Of Future Earth</h1>
     <img src={Image} alt="" />
     <span>
       <h1>{title}</h1>
