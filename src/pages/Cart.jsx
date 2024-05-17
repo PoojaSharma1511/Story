@@ -16,7 +16,7 @@ function Cart() {
      }
       </div>
       <div className="bill-section">
-        <h1>Total Items : {cart.length} </h1>
+        <h1>Total Story Cards : {cart.length} </h1>
         <h1>Total Amount : {totalPrice}</h1>
         <button className="pay-btn">Pay Now</button>
       </div>

@@ -3,7 +3,7 @@ import {remove} from '../store/cartSlice'
 
 function CartItem({product}) {
   
-    const {Image , storyTitle , id , title } = product
+    const {Image , StoryTitle , id , Title } = product
   
     const dispatch = useDispatch()
 
@@ -13,11 +13,10 @@ function CartItem({product}) {
 
     return (
     <div className="cart-item">
-      <h1><span className='V'>The Lost City </span> Of Future Earth</h1>
     <img src={Image} alt="" />
     <span>
-      <h1>{title}</h1>
-      <h3>Story Title : {storyTitle}$</h3>
+      <h1>{Title}</h1>
+      <h3>Story Title : {StoryTitle}</h3>
       <h3>QTY : 1</h3>
     </span>
     

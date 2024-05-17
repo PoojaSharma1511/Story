@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../store/cartSlice";
 
 function ProductCard({ product }) {
-  const { Image, title, status } = product;
+  const { Image, Title, Status } = product;
 
   const dispatch = useDispatch()
 
@@ -15,9 +15,9 @@ function ProductCard({ product }) {
   return (
     <div className="product">
       <img src={Image} alt="" />
-      <h1>{title} </h1>
+      <h1>{Title} </h1>
       <span>
-        <h3>status : {status}</h3>
+        <h3>status : {Status}</h3>
         <button className="add_cart" onClick={() => handleClick()}>
           Add to cart
         </button>
